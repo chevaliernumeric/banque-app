@@ -22,12 +22,12 @@ class AdminController extends Controller
 
     public function account()
     {
-        $casiers = casier::all();
+        $casiers = Casier::all();
         return view('admin.accounts')->with('casiers', $casiers);
     }
     public function addcaisier(Request $request)
     {
-        $casier = new casier();
+        $casier = new Casier();
         $casier->email = $request->input('email');
         $casier->password = $request->input('password');
         $casier->accounttype = 'Caisier';
@@ -39,7 +39,7 @@ class AdminController extends Controller
 
     public function updatecasier(Request $request)
     {
-        $casier = casier::find($request->input('id'));
+        $casier = Casier::find($request->input('id'));
         $casier->email = $request->input('email');
         $casier->password = $request->input('password');
         $casier->update();
@@ -47,7 +47,7 @@ class AdminController extends Controller
     }
     public function deletecasier($id)
     {
-        $casier = casier::find($id);
+        $casier = Casier::find($id);
         $casier->delete();
         return back()->with('status', 'votre compte a bien été supprimé');
     }

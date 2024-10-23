@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Account;
-use App\Models\casier;
+use App\Models\Casier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -39,7 +39,7 @@ class loginController extends Controller
     }
 
     public function loginaccess(Request $request){
-        $casier = casier::where('email', $request->email)->first();
+        $casier = Casier::where('email', $request->email)->first();
         if ($casier) {
             if ($casier->password == $request->password) {
 
