@@ -9,7 +9,7 @@ use App\Models\Statement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class clientController extends Controller
+class ClientController extends Controller
 {
     //
 

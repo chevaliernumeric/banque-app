@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Account;
-use App\Models\casier;
+use App\Models\Casier;
 use App\Models\Message;
 use App\Models\Notice;
 use App\Models\Statement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class adminController extends Controller
+class AdminController extends Controller
 {
     //
 

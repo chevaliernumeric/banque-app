@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Account;
-use App\Models\casier;
+use App\Models\Casier;
 use App\Models\Statement;
 use Illuminate\Http\Request;
 
-class casierController extends Controller
+class CasierController extends Controller
 {
     //
 
