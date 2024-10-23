@@ -7,7 +7,7 @@ use App\Models\Casier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class loginController extends Controller
+class LoginController extends Controller
 {
     //
 
